@@ -1,0 +1,75 @@
+CONSULTA#1
+-----------------------------------------------------------------------
+¿Qué estudiantes no tienen a su madre de forma activa en su vida?
+----------------------------------------------------------------------- 
+select   
+	 (estudiante.nombre_e || ' ' || estudiante.apellidos_e )  as Nombre_de_los_estudiantes, 
+	 representante.madre_presente 
+from ESTUDIANTE
+inner join representante on representante.id_representante=estudiante.id_estudiante
+where madre_presente like '%Nopresente%'
+group by estudiante.nombre_e,estudiante.apellidos_e,representante.madre_presente 
+
+
+CONSULTA#2
+------------------------------------------------------------------------------
+¿Qué estudiantes no tienen a su padre de forma activa en su vida?
+------------------------------------------------------------------------------
+select   
+	 (estudiante.nombre_e || ' ' || estudiante.apellidos_e )  as Nombre_de_los_estudiantes, 
+	 representante.padre_presente 
+from ESTUDIANTE
+inner join representante on representante.id_representante=estudiante.id_estudiante
+where padre_presente like '%Nopresente%'
+group by estudiante.nombre_e,estudiante.apellidos_e,representante.madre_presente 
+
+CONSULTA#3
+----------------------------------------------------------------------------
+¿Lista de los estudiantes que no tienen a papá ni a mamá de forma activa ?
+------------------------------------------------------------------------------
+select   
+	 (estudiante.nombre_e || ' ' || estudiante.apellidos_e )  as Lista_de_los_estudiantes	 
+from ESTUDIANTE
+inner join representante on representante.id_representante=estudiante.id_estudiante
+where padre_presente like '%Nopresente%' or madre_presente like '%Nopresente%'
+group by estudiante.nombre_e,estudiante.apellidos_e
+
+
+CONSULTA#4
+----------------------------------------------------------------------------
+Mostrar datos del tutor de cada curso en cada período, por ejemplo: 
+nombre del tutor, curso, período, cantidad de estudiantes de ese curso.
+----------------------------------------------------------------------------
+
+select 
+     (PROFESOR.nombre_del_profesor || ' ' || PROFESOR.apellido_del_profesor ) AS nombre_del_tutor,
+	 curso.cantidad_estudiante_curso, curso.nombre_de_curso, curso.ubicacion_del_curso as paralelo,
+	 periodo.periodo
+from PROFESOR
+inner join curso on curso.id_curso=PROFESOR.id_profesor
+inner join periodo on periodo.id_periodo=curso.id_curso
+group by profesor.nombre_del_profesor,PROFESOR.apellido_del_profesor,
+curso.cantidad_estudiante_curso , curso.nombre_de_curso, curso.ubicacion_del_curso, periodo.periodo
+
+
+CONSULTA#5
+---------------------------------------------------------------------------------------------------
+Mostrar cantidad de estudiantes aprobados y reprobados por período
+--------------------------------------------------------------------------------------------------
+SELECT  periodo.periodo,   'Aprobados' As Aprobados,   
+COUNT(matricula.id_estudiante) AS Cantidad_de_estudiantes
+FROM            matricula, periodo
+WHERE matricula.nota_final>17
+group by periodo.periodo
+union
+SELECT  periodo,   'Reprobados' As Reprobados,   
+count (matricula.id_estudiante) AS Cantidad_de_estudiantes
+from  matricula , periodo 
+WHERE matricula.nota_final<16
+group by periodo.periodo
+
+
+
+
+
+

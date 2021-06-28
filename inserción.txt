@@ -1,0 +1,145 @@
+INSERT INTO PERIODO   VALUES ('111', '2021/11/01', '2022/11/22', '2021');    
+INSERT INTO PERIODO   VALUES ('112', '2021/11/01', '2022/11/22', '2021');
+INSERT INTO PERIODO   VALUES ('113', '2021/11/01', '2022/11/22', '2021');
+INSERT INTO PERIODO   VALUES ('114', '2021/11/01', '2022/11/22', '2021');
+INSERT INTO PERIODO   VALUES ('115', '2021/11/01', '2022/11/22', '2021');
+INSERT INTO PERIODO   VALUES ('116', '2021/11/01', '2022/11/22', '2021');
+INSERT INTO PERIODO   VALUES ('117', '2021/11/01', '2022/11/22', '2019');
+INSERT INTO PERIODO   VALUES ('118', '2021/11/01', '2022/11/22', '2019');
+INSERT INTO PERIODO   VALUES ('119', '2021/11/01', '2022/11/22', '2021');
+
+
+INSERT INTO PROFESOR VALUES ('111', '125426543','Carlos','Vasquez', '1995/09/11');
+INSERT INTO PROFESOR VALUES ('112', '123232332','Rafael','Intriago','1995/04/11');
+INSERT INTO PROFESOR VALUES ('113', '111355331','Fernanda','Lucas', '1995/02/11');
+INSERT INTO PROFESOR VALUES ('114', '546433439','Lucero','Patiño',  '1995/01/11');
+INSERT INTO PROFESOR VALUES ('115', '343343455','Edma','Rodriguez', '1995/09/14');
+INSERT INTO PROFESOR VALUES ('116', '345673324','Richard','Velez',  '1995/03/13');
+INSERT INTO PROFESOR VALUES ('117', '125446543','Lucero','Patiño',  '1995/02/14');
+INSERT INTO PROFESOR VALUES ('118', '123322211','Edma','Rodriguez', '1995/09/15');
+INSERT INTO PROFESOR VALUES ('119', '111543222','Richard',' Velez', '1995/09/19');
+
+
+INSERT INTO CURSO VALUES ('0111','111','111', 'Octavo' ,       'A',  '20');
+INSERT INTO CURSO VALUES ('0112','112','113', 'Octavo' ,       'B',  '21');
+INSERT INTO CURSO VALUES ('0113','113','113', 'Noveno' ,       'A',  '20');
+INSERT INTO CURSO VALUES ('0114','114','114', 'Noveno' ,       'B',  '22');
+INSERT INTO CURSO VALUES ('0115','115','115', 'Decimo' ,       'A',  '21');
+INSERT INTO CURSO VALUES ('0116','116','116', 'Decimo' ,       'B',  '22');
+INSERT INTO CURSO VALUES ('0117','117','117','1bachillerato' , 'A',  '20');
+INSERT INTO CURSO VALUES ('0118','118','118','2bachillerato' , 'A',  '20');
+INSERT INTO CURSO VALUES ('0119','119','119', '3bachillerato', 'A',  '20');
+
+
+INSERT INTO ASIGNATURA VALUES ('0001', 'Matematicas', 'Carlos Vasquez');
+INSERT INTO ASIGNATURA VALUES ('0002', 'Lenguaje',    'Rafael Intriago');
+INSERT INTO ASIGNATURA VALUES ('0003', 'Ingles',      'Fernanda lucas');
+INSERT INTO ASIGNATURA VALUES ('0004', 'Física',      'Lucero Patiño');
+INSERT INTO ASIGNATURA VALUES ('0005', 'Quimica',     'Edma Rodriguez');
+INSERT INTO ASIGNATURA VALUES ('0006', 'Educacion',   'Richard veles');
+INSERT INTO ASIGNATURA VALUES ('0007', 'Historia',    'Carlos Vasquez');
+INSERT INTO ASIGNATURA VALUES ('0008', 'POO',         'Rafael Intriago');
+INSERT INTO ASIGNATURA VALUES ('0009', 'Literatura',  'Fernanda Lucas');
+
+
+INSERT INTO REPRESENTANTE VALUES ('001',  '123323219',  'Emilio',  'Lucas',    'Los esteros',  '02345678',  '03456789', 'Nopresente',  '123456721',  'Carmen',  'Lopez',   'Las cumbres',  '765436',  '0987655', 'Sipresente','M');
+INSERT INTO REPRESENTANTE VALUES ('002',  '143234344',  'Carlos',  'Lopez',    'Los estertos', '987654335', '61829320', 'Sipresente',  '123456721',  'Amelia',  'Lopez',   'Los esteros',  '568823',  '6873838', 'Sipresente','M');
+INSERT INTO REPRESENTANTE VALUES ('003',  '123456782',  'Antonio', 'Lucas',    'Las sequita',  '654322444', '65432345', 'Sipresente',  '24321122',   'Paula',   'Lucas',   'La sequita',   '654324',  '455555',  'Nopresente','P');
+INSERT INTO REPRESENTANTE VALUES ('004',  '123323211',  'Emilio',  'Lucas',    'Los esteros',  '02345678',  '03456789', 'Nopresente',  '123456721',  'Carmen',  'Lopez',   'Las cumbres',  '765436',  '0987655', 'Sipresente','M');
+INSERT INTO REPRESENTANTE VALUES ('005',  '765432222',  'Marcos',  'Velez',    'La dolorosa',  '026789222', '82728282', 'Sipresente',  '123456721',  'Lucero',  'Arteaga', 'La dolorosa',  '765433',  '6873838', 'Nopresente','P');
+INSERT INTO REPRESENTANTE VALUES ('006',  '135678898',  'Bryan',   'Mero',     'Divino niño',  '098753334', '87654323', 'Sipresente',  '136544662',  'Rafaela', 'Mero',    'Las cumbres',  '987653',  '9876541', 'Sipresente','M');
+INSERT INTO REPRESENTANTE VALUES ('007',  '135444644',  'Felipe',  'Intriago', 'Las acasias',  '098765434', '87654323', 'Sipresente',  '136544661',  'Johana',  'Mero',    'Las acasias',  '654354',  '9876543', 'Nopresente','P');
+INSERT INTO REPRESENTANTE VALUES ('008',  '134563782',  'Johan',   'Molina',   'Las acasias',  '088765434', '87654323', 'Sipresente',  '136544616',  'Elena',   'Mera',    'Las acasias',  '654351',  '7654334', 'Sipresente','M');
+INSERT INTO REPRESENTANTE VALUES ('009',  '136542333',  'Enrique', 'Espinoza', 'El palmar',    '067373883', '87654323', 'Nopresente',  '134321266',  'Melanie', 'Criollo', 'El palmar',    '654443',  '7654325', 'Sipresente','M');
+
+INSERT INTO ESTUDIANTE VALUES  ('01',  '001', '0111', '1314345987', 'Rocio' , 'Lopez',     'femenino',  '1999/01/11', 'Altagracia',        '0980500879');
+INSERT INTO ESTUDIANTE VALUES  ('02',  '002', '0112', '1231323888', 'Carmen', 'Baque',     'femenino',  '1999/02/12', 'Los esteros',       '0993283554');
+INSERT INTO ESTUDIANTE VALUES  ('03',  '003', '0113', '1231324777', 'José'  , 'vinces',    'Masculino', '1999/04/14', 'Altamira',          '0939328689');
+INSERT INTO ESTUDIANTE VALUES  ('04',  '004', '0114', '1231325456', 'Isacc' , 'Lucas',     'Masculino', '2000/08/30', 'Los esteros',       '0839328999');
+INSERT INTO ESTUDIANTE VALUES  ('05',  '005', '0115', '1231326245', 'Darel' , 'Intriago',  'Masculino', '1999/01/14', 'Portoviejo',        '0239328088');
+INSERT INTO ESTUDIANTE VALUES  ('06',  '006', '0116', '1231328234', 'Johan' , 'Intriago',  'Masculino', '1999/01/11', 'Alatamira',         '0239328245');
+INSERT INTO ESTUDIANTE VALUES  ('07',  '007', '0117', '1432228234', 'Rodrigo','Intriago',  'Masculino', '1999/05/12', 'Las almendras',     '0239323335');
+INSERT INTO ESTUDIANTE VALUES  ('08',  '008', '0118', '1432228234', 'Johana', 'Molina',    'Femenino',  '2000/03/16', 'Las acaias',        '0233332335');
+INSERT INTO ESTUDIANTE VALUES  ('09',  '009', '0119', '1432228234', 'Sofia'  ,'Esponoza',  'Feminino',  '1999/01/23', 'Divino niño',       '0321233111');
+
+
+begin;
+insert into MATRICULA  values('01111', '01', '111', '0111', '8','9','0');
+update MATRICULA set nota_final=(nota_parcial1+nota_pacial2) where id_matricula=01111; 
+commit;
+begin;
+insert into MATRICULA  values('01112', '02', '112', '0112', '9','3','0');
+update MATRICULA set nota_final=(nota_parcial1+nota_pacial2) where id_matricula=01112; 
+commit;
+begin;
+insert into MATRICULA  values('01113', '03', '113', '0113', '8','8','0');
+update MATRICULA set nota_final=(nota_parcial1+nota_pacial2) where id_matricula=01113; 
+commit;
+begin;
+insert into MATRICULA  values('01114', '04', '114', '0114', '7','7','0');
+update MATRICULA set nota_final=(nota_parcial1+nota_pacial2) where id_matricula=01114; 
+commit;
+begin;
+insert into MATRICULA  values('01115', '05', '115', '0115', '6','3','0');
+update MATRICULA set nota_final=(nota_parcial1+nota_pacial2) where id_matricula=01115; 
+commit;
+begin;
+insert into MATRICULA  values('01116', '06', '116', '0116', '8','8','0');
+update MATRICULA set nota_final=(nota_parcial1+nota_pacial2) where id_matricula=01116; 
+commit;
+begin;
+insert into MATRICULA  values('01117', '07', '117', '0117', '5','5','0');
+update MATRICULA set nota_final=(nota_parcial1+nota_pacial2) where id_matricula=01117; 
+commit;
+begin;
+insert into MATRICULA  values('01118', '08', '118', '0118', '8','9','0');
+update MATRICULA set nota_final=(nota_parcial1+nota_pacial2) where id_matricula=01118; 
+commit;
+begin;
+insert into MATRICULA  values('01119', '09', '119', '0119', '9','9','0');
+update MATRICULA set nota_final=(nota_parcial1+nota_pacial2) where id_matricula=01119; 
+commit;
+
+
+begin;
+insert into calificacion values('01111', '01', '0001', '111', '01111', 'Rocio Lopez',  'Carlos Vazquez', '8tavo "A"','8','9','0',   '2021');
+update calificacion set nota_final=(nota_parcial_1+nota_parcial_2) where id_calificacion=01111; 
+commit;
+begin;
+insert into calificacion values('01112', '02', '0002', '112', '01112', 'Carmen Baque', 'Rafael Intriago','8tavo "B"','9','3','0',   '2021');
+update calificacion set nota_final=(nota_parcial_1+nota_parcial_2) where id_calificacion=01112; 
+commit;
+begin;
+insert into calificacion values('01113', '03', '0003', '113', '01113', 'José vinces',  'Fernanda Lucas', '9tavo "A"','8','8','0' ,  '2021');
+update calificacion set nota_final=(nota_parcial_1+nota_parcial_2) where id_calificacion=01113; 
+commit;
+begin;
+insert into calificacion values('01114', '04', '0004', '114', '01114', 'Isacc Lucas',  'Lucero Patiño',  '9tavo "A"', '7','7','0' ,  '2021');
+update calificacion set nota_final=(nota_parcial_1+nota_parcial_2) where id_calificacion=01114; 
+commit;
+begin;
+insert into calificacion values('01115', '05', '0005', '115', '01115', 'Darel Intriago','Edma Rodriguez', '10tavo "A"','6','3','0' ,   '2021');
+update calificacion set nota_final=(nota_parcial_1+nota_parcial_2) where id_calificacion=01115; 
+commit;
+begin;
+insert into calificacion values('01116', '06', '0006', '116', '01116', 'Johan Intriago', 'Richard Velezz','10tavo "B"','8','8','0',   '2021'
+update calificacion set nota_final=(nota_parcial_1+nota_parcial_2) where id_calificacion=01116; 
+commit;
+begin;
+insert into calificacion values('01117', '07', '0007', '117', '01117', 'Rodrigo Intriago','Carlos Vasquez','1bachi "A"','5','5','0' , '2019');
+update calificacion set nota_final=(nota_parcial_1+nota_parcial_2) where id_calificacion=01117; 
+commit;
+begin;
+insert into calificacion values('01118', '08', '0008', '118', '01118', 'Johana Molina', 'Rafael Intriago','2bachi "A"','8','9','0' ,  '2019');
+update calificacion set nota_final=(nota_parcial_1+nota_parcial_2) where id_calificacion=01118; 
+commit;
+begin;
+insert into calificacion values('01119', '09', '0009', '119', '01119', 'Sofia Esponoza', 'Fernanda Lucas','3bachi "A"','9','9','0',   '2021');
+update calificacion set nota_final=(nota_parcial_1+nota_parcial_2) where id_calificacion=01119; 
+commit;
+
+
+
+
+
+
